@@ -103,7 +103,7 @@ $(document).ready(function() {
     }
   })
 
-  mySwiper.on('slideChangeTransitionStart', function() {
+  mySwiper.on('transitionStart', function() {
     pauseAllVideos()
     //pauseAllSvgs()
     var currentSlide = $('.swiper-slide-active');
