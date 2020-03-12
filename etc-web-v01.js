@@ -103,15 +103,17 @@ $(document).ready(function() {
     }
   })
 
-  mySwiper.on('transitionStart', function() {
+  mySwiper.on('slideChange', function() {
     pauseAllVideos()
     //pauseAllSvgs()
     var currentSlide = $('.swiper-slide-active');
+
     if (currentSlide.children('.white-menu').length == 1) {
       lightTheme()
     } else {
       darkTheme()
     }
+
     if (currentSlide.find('iframe').length == 1) {
       playVideo()
       //console.log('PLAYING VIDEO')
