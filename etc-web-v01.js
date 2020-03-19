@@ -54,8 +54,11 @@ $(document).ready(function() {
     console.log('playing svg')
   }
 
-  pauseAllVideos()
-
+    Pace.on('done', function() {
+    loadTheme()
+    $('.intro-load').fadeOut(300);
+  });
+  
   var initDestroyTimeOutPace = function() {
     var counter = 0;
 
@@ -77,12 +80,7 @@ $(document).ready(function() {
     }, 100);
   }
   initDestroyTimeOutPace();
-
-  Pace.on('done', function() {
-    loadTheme()
-    $('.intro-load').fadeOut(300);
-  });
-
+      pauseAllVideos()
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
