@@ -20,15 +20,13 @@ $(document).ready(function() {
   }
 
   function lightTheme() {
-    $('.menu').addClass('light');
-    $('.swiper-fraction, .slider-text').addClass('white-text');
+    $('.swiper-fraction, .slider-text, .etc-menu').addClass('white-text');
     $('.swiper-next, .swiper-prev').addClass('white-cursor');
     //console.log('light theme loaded')
   }
 
   function darkTheme() {
-    $('.menu').removeClass('light');
-    $('.swiper-fraction, .slider-text').removeClass('white-text');
+    $('.swiper-fraction, .slider-text, .etc-menu').removeClass('white-text');
     $('.swiper-next, .swiper-prev').removeClass('white-cursor');
     //console.log('dark theme loaded')
   }
