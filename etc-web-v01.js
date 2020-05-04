@@ -5,7 +5,6 @@ Webflow.push(function() {
 });
 Webflow.ready();
 
-$(document).ready(function() {
 
   function pauseAllVideos() {
     $('iframe').each(function() {
@@ -122,5 +121,3 @@ $(document).ready(function() {
     } else {}
 
   });
-
-});
