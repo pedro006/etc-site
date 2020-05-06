@@ -1,5 +1,5 @@
 //edit
-$('.etc-menu .info').hide(0)
+$('.etc-menu.info').hide(0)
 
 Webflow.push(function() {
   $(".w-condition-invisible").remove();
@@ -57,7 +57,7 @@ Webflow.ready();
     Pace.on('done', function() {
     loadTheme()
     $('.intro-load').fadeOut(300);
-    $('.etc-menu .info').fadeIn(300) 
+    $('.etc-menu.info').fadeIn(300) 
     
   });
   
